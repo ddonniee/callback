@@ -1,0 +1,297 @@
+
+:root {
+    /* color */
+    --color-black : #35394A;
+    --color-dark-icon : #4C5866;
+    --color-dark-font : #5D6067;
+    --color-light-icon : #8C969F;
+    --color-grey : #8C9369F;
+    --color-blue-grey : #ABB6C5;
+    --color-brown-grey : #B7B8BD;
+    --color-light-font : #BABABA;
+    --color-blue-bg : #E9F3FD;
+    --color-red-bg : #F8F8F8;
+    
+    --color-main-blue : #3182F7;
+    --color-main-red : #E95548;
+    --color-green : #17BB7F;
+
+    --color-loading : #EFEFEF;
+}
+
+
+.content {
+   width: 100%; overflow-x: scroll; height: 100%; max-width: 768px; 
+}
+
+/* 편집하기 클릭시 모달창 */
+
+.ReactModalPortal > div:first-child {
+    background-color: transparent !important;
+}
+.ReactModalPortal > div > div {
+    position: absolute; width: 124px; height: 89px; left: 0vw !important; margin-left: 60vw !important;
+    padding: 0 !important; background: #FFFFFF; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.07); border-radius: 8px;
+}
+@media only screen and (max-width : 380px) {
+    .ReactModalPortal > div > div{
+        margin-left: 60vw !important; 
+    }
+    }
+@media only screen and (min-width : 381px) {
+.ReactModalPortal > div > div{
+    margin-left: 64vw !important; 
+}
+}
+.on_edit {
+    height: 50%;
+}
+.on_edit  div {
+    display: flex; justify-content: space-around; height: 100%;     align-items: center; 
+}
+.on_edit div p {
+    margin: 5px !important; color: var(--color-black);
+}
+.on_edit div > a,
+.on_edit div img {
+    margin-bottom: auto; 
+    margin-top: auto;
+}
+.edit_btn {
+    width: 100%; justify-content: space-around; display: flex; text-decoration: none;
+}
+.edit_btn:visited {
+    color: var(--color-black);
+}
+
+@media only screen and (min-width : 830px) { 
+    .ReactModalPortal > div > div {
+        position: absolute; width: 180px; height: 100px; left: 12vw !important; margin-left: 60vw !important;
+        background: #FFFFFF; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.07); border-radius: 8px;
+        
+    }
+    
+    /* .on_edit div a, */
+    .on_edit div img {
+        width: 25px;
+    }
+    .on_edit div a {
+        width: 100%;
+    }
+    .on_edit div p {
+        font-size: 19px; 
+    }
+}
+/* 설정안내 모달창 */
+.react-confirm-alert-overlay {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+
+
+
+
+/* Carousel */
+.carousel-inner {
+    position: relative;
+    top: -21px;
+}
+
+.carousel-inner,
+.none-content .list-img {
+    display: flex; 
+    height: 164px !important; 
+}
+.carousel-item {
+    display: none;
+}
+.carousel-item > div {
+    height: 100%;
+}
+.carousel-inner .active {
+    display: block; text-align: center; 
+}
+.carousel-item  div img{
+    height: 100%; width: 100%;  object-fit: cover;
+}
+.carousel-indicators  {
+    display: inherit; position: relative; bottom: -167px; text-align: center;  
+}
+
+/* Carousel */
+
+/* Create callback*/
+
+.create-callback,
+.w-login{
+    height: 100%;
+}
+
+
+
+ .content
+ .main-content {
+    height: calc(100%-56px); top: 56px;
+}
+ .w-content{
+    width: 90%; height:100%; margin-left: auto; margin-right: auto;
+}
+
+
+.rec-method input {
+    display: none;
+}
+.rec-method {
+    display: flex; width: 90%; justify-content: space-evenly;     margin-left: auto;
+    margin-right: auto;
+}
+.rec-method > div:not(:nth-child(2)) {
+    width: 48%;
+}
+.rec-method > div:nth-child(2) {
+    width: 4%;
+}
+.rec-method div div{
+    width:45%; border-radius: 20px; background-color: var(--color-main-blue); color: white; width: 100%; text-align: center; height: 50px; line-height: 44px;
+}
+
+
+
+/* Terms */
+.w-terms .content {
+    width: 90%;     margin-left: auto; margin-right: auto;
+}
+.w-terms .lists {
+    list-style: none; padding: 0;
+}
+.w-terms .lists div {
+    font-weight: 700; font-size: 18px; line-height: 34px; letter-spacing: -0.05em;
+}
+.w-terms .lists p {
+    font-weight: 400; font-size: 15px; line-height: 22px; letter-spacing: -0.05em; color: var(--color-dark-icon);
+
+}
+
+/* float btn */
+.main .floats {
+    position: fixed; top: 85%; right: 5%; 
+}
+.main .btn-shape {
+    width: 50px; height: 50px; border-radius: 50%; background-color: white; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}   
+.main .floats .btn-shape{
+    text-align: center;
+    /* display: table-cell; */
+    display:table-cell;
+    vertical-align: middle;
+}
+
+@media only screen and (min-width: 360px) and (max-width : 380px) {
+    .main .floats {
+       top: 80%;
+    }
+    
+   
+}
+@media only screen and (max-width : 380px) {
+    .floats > div:nth-child(2) {
+       margin-top: 5px;
+    }
+   
+}
+
+@media only screen and (max-device-width : 730px) {
+    .main .floats {
+        overflow:hidden;
+        -webkit-overflow-scrolling:touch;   
+    }
+    .main .floats .btn-shape img{
+        margin-top: 5px;
+    }
+}
+@media only screen and (min-width : 830px) {
+    .main .floats {
+        top: 80%;
+    }
+    .main .floats .btn-shape {
+        width: 70px; height: 70px;
+    }
+    .main .floats .btn-shape img {
+        width: 30px;
+    }
+    .main .floats a .btn-shape {
+        top: -10px; position: relative;
+    }
+}
+/* @media only screen and (min-device-width : 1080px) {
+    .ReactModalPortal > div > div {
+        position: absolute; left: 0px !important;
+        background-color: red;
+    }
+} */
+
+.react-confirm-alert-overlay {
+    width: 100%;
+}
+.react-confirm-alert {
+    margin-left: auto;
+    margin-right: auto;
+}
+.react-confirm-alert-body {
+    margin: 0 auto; font-weight: 400; font-size: 15px; line-height: 24px; letter-spacing: -0.05em;
+    color: var(--color-dark-font) !important; border-radius: 16px !important; height: auto;
+    
+}
+.react-confirm-alert-body h1 {
+    font-weight: 700; font-size: 18px; line-height: 30px; letter-spacing: -0.05em; color: var(--color-black);
+}
+.react-confirm-alert-button-group {
+    justify-content: flex-end !important; 
+    /* margin-top: 53px !important;  */
+}
+.react-confirm-alert-button-group > button {
+    margin: 0 !important; font-weight: 400; font-size: 15px !important; line-height: 24px; padding: 0 !important; background-color: transparent !important; 
+    /* color: #8C969F !important; */
+}
+.react-confirm-alert-body{
+    width: 90% !important;
+}
+.error .react-confirm-alert-body{
+    width: 380px !important;
+}
+.none .react-confirm-alert-body{
+    width: 380px !important;
+}
+
+@media only screen and (max-width : 380px) {
+    .error .react-confirm-alert-body{
+        width: 320px !important;
+    }
+    .none .react-confirm-alert-body{
+        width: 90% !important;
+    }
+}
+@media only screen and (max-device-width : 730px) {
+    .error .react-confirm-alert-body{
+        width: 380px !important;
+    }
+    .none .react-confirm-alert-body{
+        width: 380px !important;
+    }
+}
+@media only screen and (min-width : 830px) {
+    .error .react-confirm-alert-body{
+        width: 747px !important;
+    }
+    .none .react-confirm-alert-body{
+        width: 747px !important;
+    }
+}
+/* .react-confirm-alert-button-group > button:first-child {
+    color: #8C969F !important;
+}
+.react-confirm-alert-button-group > button:last-child {
+    color: #17BB7F !important;
+}
+.confirm_txt {} */
